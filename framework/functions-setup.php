@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * By add_image_size( 'initiator-large-thumbnails', 1170, 614, true );. This should be used for content that has no sidebars.
 		 */
-		add_image_size( 'initiator-large-thumbnails', 1170, 614, true );
+		add_image_size( 'individuality-large-thumbnails', 1170, 614, true );
 
 		/**
 		 * Load theme translation.
