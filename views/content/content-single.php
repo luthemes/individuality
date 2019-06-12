@@ -18,6 +18,12 @@ use Benlumia007\Backdrop\Entry\Entry as entry;
 		<?php entry::display( 'entry-title' ); ?>
 		<span class="entry-metadata"><?php entry::display( 'posted-on' ); ?></span>
 	</header>
+	<figure class = "post-thumbnail alignwide">
+		<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail( 'individuality-large-thumbnails' );
+		}
+		?>
+	</figure>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
