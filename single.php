@@ -18,13 +18,7 @@ use Benlumia007\Backdrop\View\View as sidebar;
 					while ( have_posts() ) : the_post();
 						get_template_part( 'views/content/content', 'single' );
 					endwhile;
-						the_post_navigation(
-							array(
-								'next_text' => '<span class="post-next" aria-hiddent="true">' . esc_html__( 'Next', 'initiator' ) . '</span><span class="post-title">%title</span>',
-								'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'initiator' ) . '</span><span class="post-title">%title</span>',
-							)
-						);
-				comments_template();
+					comments_template();
 				?>
 			</main>
 			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
