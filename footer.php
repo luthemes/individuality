@@ -9,6 +9,7 @@
  */
 
 use Benlumia007\Backdrop\Site\Site as site;
+use Benlumia007\Backdrop\View\View as menu;
 ?>
 	<footer id="footer" class="site-footer">
 		<div class="site-info">
@@ -29,6 +30,7 @@ use Benlumia007\Backdrop\Site\Site as site;
 				site::render( 'theme-link' ) // phpcs:ignore
 			);
 			?>
+			<?php menu::display( 'menu', [ 'social' ] ); ?>
 		</div>
 	</footer>
 </div>
