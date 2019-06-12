@@ -1,11 +1,11 @@
 <?php
 /**
- * Initiator ( content.php )
+ * Individuality ( content.php )
  *
- * @package     Initiator
- * @copyright   Copyright (C) 2018-2019. Benjamin Lu
+ * @package     Individuality
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @author      Benjamin Lu ( https://luthemes.com )
  */
 
 use Benlumia007\Backdrop\Entry\Entry as entry;
@@ -18,6 +18,12 @@ use Benlumia007\Backdrop\Entry\Entry as entry;
 		<?php entry::display( 'entry-title' ); ?>
 		<span class="entry-metadata"><?php entry::display( 'posted-on' ); ?></span>
 	</header>
+	<figure class = "post-thumbnail alignwide">
+		<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail( 'individuality-large-thumbnails' );
+		}
+		?>
+	</figure>
 	<div class="entry-excerpt">
 		<?php the_excerpt(); ?>
 	</div>
