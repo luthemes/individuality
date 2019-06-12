@@ -22,9 +22,11 @@ use Benlumia007\Backdrop\View\View as menu;
 <body <?php body_class(); ?>>
 <div id="container" class="site-container">
 	<header id="header" class="site-header">
-		<div class="site-branding">
-			<?php site::display( 'site-title' ); ?>
-			<?php site::display( 'site-description' ); ?>
+		<div class="branding-navigation">
+			<div class="site-branding">
+				<?php site::display( 'site-title' ); ?>
+				<?php site::display( 'site-description' ); ?>
+			</div>
+			<?php menu::display( 'menu', [ 'primary' ] ); ?>
 		</div>
-		<?php menu::display( 'menu', [ 'primary' ] ); ?>
 	</header>
