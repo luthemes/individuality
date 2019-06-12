@@ -1332,7 +1332,8 @@ p.comment-awaiting-moderation {
 
 .archive-header .archive-description {
 	display: block;
-	font-size: 0.563em;
+	font-family: 'Merriweather', serif;
+	font-size: 0.5em;
 	font-weight: normal;
 }
 
