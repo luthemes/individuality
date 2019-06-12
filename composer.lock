@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5dae0eb28c8d17e63de12549d76fde47",
+    "packages": [
+        {
+            "name": "benlumia007/backdrop-core",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benlumia007/backdrop-core.git",
+                "reference": "dc74047f5daee471034d26edebbfb6dfb45a11a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/dc74047f5daee471034d26edebbfb6dfb45a11a6",
+                "reference": "dc74047f5daee471034d26edebbfb6dfb45a11a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Benlumia007\\Backdrop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Lu",
+                    "email": "benlumia007@gmail.com",
+                    "homepage": "https://benjlu.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A core that helps you build amazing themes",
+            "homepage": "https://github.com/benlumia007/backdrop-core",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2019-05-11T07:37:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6"
+    },
+    "platform-dev": []
+}
