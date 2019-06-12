@@ -1,17 +1,17 @@
 <?php
 /**
- * Initiator ( functions-setup.php )
+ * Individuality ( functions-setup.php )
  *
- * @package     Initiator
+ * @package     Individuality
  * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @author      Benjamin Lu ( https://luthemes.com )
  */
 
 /**
  * Define namespace
  */
-namespace Initiator;
+namespace Individuality;
 
 /**
  * Setup Theme Support.
@@ -83,7 +83,7 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * Load theme translation.
 		 */
-		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
+		load_theme_textdomain( 'individuality', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
 
@@ -109,7 +109,7 @@ add_action( 'after_setup_theme', function() {
 				'header-image' => array(
 					'url'           => '%s/assets/images/header-image.jpg',
 					'thumbnail_url' => '%s/assets/images/header-image.jpg',
-					'description'   => esc_html__( 'Header Image', 'initiator' ),
+					'description'   => esc_html__( 'Header Image', 'individuality' ),
 				),
 			)
 		);

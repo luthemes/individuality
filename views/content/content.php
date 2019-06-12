@@ -13,7 +13,7 @@ use Benlumia007\Backdrop\Entry\Entry as entry;
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
-			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'Individuality' ) ); ?>
+			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'individuality' ) ); ?>
 		<?php } ?>
 		<?php entry::display( 'entry-title' ); ?>
 		<span class="entry-metadata"><?php entry::display( 'posted-on' ); ?></span>

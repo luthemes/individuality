@@ -1,12 +1,10 @@
 /**
  * Theme Name:     Individuality
- * Theme URI:      https://luthemes.com/portfolio/individuality
  * Author:         Benjamin Lu
- * Author URI:     https://luthemes.com
  * Description:    Individuality is a starter theme that uses backdrop-core that automatically loads your theme with all the features needed.
  * License:        GNU General Public License v2.0 or later
  * License URI:    https://www.gnu.org/licenses/gpl-2.0.html
- * Tags:           grid-layout, left-sidebar, one-column, right-sidebar, two-columns, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
+ * Tags:           grid-layout, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
  * Version:        1.0.3
  * Text Domain:    individuality
  */
@@ -987,7 +985,7 @@ input[type="submit"] {
 }
 
 .content-area .post {
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 
 .content-area .post .entry-header,
@@ -1354,6 +1352,215 @@ p.comment-awaiting-moderation {
 /**
  * 22.0 - Widgets
  */
+.widget-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.125em;
+	margin: 0 auto;
+	padding: 2em 0;
+	max-width: 44.750em;
+}
+
+ .widget-area .search-form:before,
+ .widget-area .search-form:after {
+	 clear: both;
+	 content: "";
+	 display: table;
+ }
+ 
+ .widget-area .search-form {
+	 padding: 0.938em;
+	 background: #555;
+	 max-width: 100%;
+ }
+ 
+ .widget-area .search-field {
+	 border: none;
+	 float: left;
+	 font-family: 'Merriweather', serif;
+	 font-size: 1em;
+	 padding: 0.563em;
+	 width: 100%;
+ }
+ 
+ .widget-area .search-submit {
+	 border: none;
+	 background: #d88f3c;
+	 color: #ffffff;
+	 float: right;
+	 font-family: 'Merriweather', serif;
+	 font-size: 1em;
+	 display: none;
+	 padding: 0.5em;
+	 position: relative;
+	 width: 30%;
+ }
+ 
+ .download-area .widget,
+ .widget-area .widget {
+
+ }
+ 
+ .widget ul,
+ .widget ol {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ .widget li {
+	 margin: 0.4em 0 0 0;
+ }
+ 
+ .widget li li {
+	 margin-left: 1.125em;
+ }
+ 
+ .widget select {
+	 font-family: 'Merriweather', serif;
+	 margin: 0.625em 0;
+	 padding: 0.5em;
+	 width: 100%;
+ }
+ 
+ .widget.widget_post_thumbnail {
+	 padding-bottom: 0;
+ }
+ 
+ .widget-title {
+	 margin: 0 0 0.5em 0;
+ }
+ 
+ .rss-widget-icon {
+	 display: none;
+ }
+ 
+ .rsswidget {
+	 display: block;
+ }
+ 
+ .widget_rss cite {
+	 display: block;
+	 font-size: 0.875em;
+	 font-weight: 700;
+	 margin-bottom: 1.125em;
+ }
+ 
+ .widget-area table {
+	 border-collapse: collapse;
+	 width: 100%;
+ }
+ 
+ .widget-area tr:nth-of-type(odd) {
+	 background: #eeeeee;
+ }
+ 
+ .widget-area th {
+	 background: #333333;
+	 color: #ffffff;
+	 font-weight: 700;
+ }
+ 
+ .widget-area th, td {
+	 border: 0.063em solid #cccccc;
+	 text-align: left;
+	 padding: 0.438em;
+ }
+ 
+ .rss-date {
+	 font-size: 0.875em;
+ }
+ 
+ .rssSummary {
+	 margin-top: 10px;
+ }
+ 
+ #wp-calendar table {
+	 border-collapse: collapse;
+	 width: 100%;
+ }
+ 
+ #wp-calendar tr:nth-of-type(odd) {
+	 background: #eeeeee;
+ }
+ 
+ #wp-calendar th {
+	 background: #999999;
+	 color: #ffffff;
+	 font-weight: 700;
+	 text-align: center;
+ }
+ 
+ #wp-calendar th,
+ #wp-calendar td {
+	 border: 0.063em solid #cccccc;
+	 padding: 0.438em;
+	 text-align: center;
+ }
+ 
+ #wp-calendar {
+	 border: 0.063em solid #cccccc;
+	 margin-bottom: 0;
+	 text-align: center;
+	 width: 100%;
+ }
+ 
+ #wp-calendar a {
+	 color: #1d1d1d;
+	 font-weight: 700;
+ }
+ 
+ #wp-calendar caption {
+	 font-weight: 700;
+	 margin: 5px 0;
+	 text-align: center;
+ }
+ 
+ #wp-calendar #today {
+	 background: #cccccc;
+	 font-weight: 700;
+ }
+ 
+ .textwidget {
+	 line-height: 1.6em;
+ }
+
+/**
+ * 23.0 - Captions
+ */
+ .wp-caption {
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wp-caption-text { 
+    text-align: center; 
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    background: #eeeeee;
+    font-size: 14px;
+    padding: 0.313em;
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text .jetpack-portfolio-title,
+.wp-caption .wp-caption-text .jetpack-testimonial-title {
+    margin: 0;
+    padding: 0;
+}
+
+.wp-caption p {
+    margin: 0;
+    padding: 0;
+}
 
 /**
  * 23.0 - Captions

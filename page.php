@@ -7,6 +7,7 @@
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://luthemes.com )
  */
+use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
@@ -18,5 +19,8 @@
 				comments_template();
 			?>
 		</main>
+		<div id="widget-area" class="widget-area">
+			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
+		</div>
 	</section>
 <?php get_footer(); ?>
