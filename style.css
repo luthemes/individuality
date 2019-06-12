@@ -486,6 +486,12 @@ figure {
     margin: 0;
 }
 
+pre {
+	background: #f3f3f3;
+	overflow: scroll;
+	padding: 1.125em
+}
+
 
 /**
  *  4.0 - Forms
