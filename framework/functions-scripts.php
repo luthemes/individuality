@@ -1,17 +1,17 @@
 <?php
 /**
- * Initiator ( functions-scripts.php )
+ * Individuality ( functions-scripts.php )
  *
- * @package     Initiator
+ * @package     Individuality
  * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @author      Benjamin Lu ( https://luthemes.com )
  */
 
 /**
  * Define namespace
  */
-namespace Initiator;
+namespace Individuality;
 
 /**
  * Enqueue Scripts and Styles
@@ -29,7 +29,7 @@ add_action(
 		/**
 		 * This is the main stylesheet that is being enqueue. This should be used rather than using @import stylesheets.
 		 */
-		wp_enqueue_style( 'initiator-style', get_stylesheet_uri(), array(), '1.0.0' );
+		wp_enqueue_style( 'individuality-style', get_stylesheet_uri(), array(), '1.0.0' );
 
 		/**
 		 * This allows users to comment by clicking on reply so that it gets nested.
@@ -54,6 +54,6 @@ add_action(
 				{$value}
 			}
 		";
-		wp_add_inline_style( 'initiator-style', $custom_css );
+		wp_add_inline_style( 'individuality-style', $custom_css );
 	}
 );
