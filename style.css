@@ -1,10 +1,10 @@
 /**
  * Theme Name:     Individuality
  * Author:         Benjamin Lu
- * Description:    Individuality is a starter theme that uses backdrop-core that automatically loads your theme with all the features needed.
+ * Description:    Individuality is an one column design, simple, yet easy to use. Works great with blogs and portfolio. 
  * License:        GNU General Public License v2.0 or later
  * License URI:    https://www.gnu.org/licenses/gpl-2.0.html
- * Tags:           grid-layout, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
+ * Tags:           grid-layout, one-column, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready, blog
  * Version:        1.0.3
  * Text Domain:    individuality
  */
@@ -472,6 +472,7 @@ html {
 }
 
 body {
+	color: #677d89;
 	font-family: 'Merriweather', serif;
 }
 
