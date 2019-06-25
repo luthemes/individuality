@@ -24,6 +24,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 
 == Changelog ==
 Version: 1.0.5
+- Theme URI added 
+- Author URI added
 
 Version: 1.0.4
 - single-portfolio.php added
