@@ -5,7 +5,7 @@ Tags:
 Requires at least: 5.0
 Tested up to: 5.0
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.4
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 Version: 1.0.4
 - single-portfolio.php added
 - views/content/content-portfolio.php added
+- archive-portfolio.php added
+- views-content-content-archive-portfolio.php added
 
 Version: 1.0.3
 - Add New Framework to use
