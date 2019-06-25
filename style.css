@@ -1605,22 +1605,250 @@ p.comment-awaiting-moderation {
 /**
  * 26.0 - Media Queries (Mobile Small 37.5em (600px))
  */
+ @media screen and (min-width: 30.063em) and (max-width: 37.50em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+}
 
 /**
  * 27.0 - Media Queries (Mobile Medium 48.688em (667px))
  */
+ @media screen and (min-width: 37.563em) and (max-width: 41.688em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+}
 
 /**
  * 28.0 - Media Queries (Mobile Large 46em (736px))
  */
+ @media screen and (min-width: 41.750em) and (max-width: 46em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+}
 
 /**
  * 29.0 - Media Queries (Tablet Small 48em (768px))
  */
+ @media screen and (min-width: 46.063em) and (max-width: 48em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+}
 
 /**
  * 30.0 - Media Queries (Tablet Large 64em (1024px))
  */
+ @media screen and (min-width: 48.063em) and (max-width: 64em) {
+	.main-navigation {
+		padding: 0.5em;
+	}
+
+	.primary-navigation {
+		width: 100%;
+	}
+
+	.primary-navigation ul,
+	.primary-navigation li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.primary-navigation ul {
+		background: transparent;
+		text-align: right;
+	}
+
+	.primary-navigation li {
+		border-top: none;
+		border-top: none;
+		display: inline-block;
+	}
+
+	.primary-navigation a {
+		color: #000000;
+		display: block;
+		padding: 0.5em 1em;
+	}
+
+	.primary-navigation a:hover,
+	.primary-navigation a:focus {
+		color: #000000;
+		display: block;
+		padding: 0.5em 1em;
+	}
+
+	.primary-navigation ul ul {
+		background: #000000;
+		float: left;
+		display: none;
+		left: -0.5em;
+		padding: 0;
+		position: absolute;
+		text-align: left;
+		z-index: 99999;
+	}
+
+	.primary-navigation ul ul a {
+		color: #ffffff;
+		width: 17em;
+	}
+
+	.primary-navigation ul li:hover > ul {
+		border: 0.063em solid #666666;
+		display: block;
+		padding-left: 0;
+	}
+
+	.primary-navigation ul ul :hover > a {
+		background: #ffffff;
+		color: #000000;
+		transition: ease-in-out 0.4s;
+	}
+
+	.primary-navigation .menu-item-has-children > a, .primary-navigation .page_item_has_children > a {
+		padding-right: 1em;
+	}
+
+	.dropdown-toggle {
+		display: none
+	}
+}
 
 /**
  * 31.0 - Media Queries (Desktop 73.125em 1170px))
