@@ -1071,6 +1071,12 @@ input[type="submit"] {
 
 .sticky {}
 
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
 /**
  * 18.0 - Content (Comments)
  */
