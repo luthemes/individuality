@@ -990,7 +990,8 @@ input[type="submit"] {
 }
 
 .content-area .post .entry-header,
-.content-area .page .entry-header {
+.content-area .page .entry-header,
+.content-area .portfolio .entry-header {
 	text-align: center;
 }
 
