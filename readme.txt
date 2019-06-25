@@ -23,6 +23,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.0.4
+
 Version: 1.0.3
 - Add New Framework to use
 - Removed unwanted features that doesn't need
