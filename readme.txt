@@ -23,6 +23,12 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.0.6
+- Add Template Home
+- Add Support for Align Wide and Adjust CSS according to it.
+- Change the Font Size for Entry Title so the H1 will be slightly different.
+- Minor Changes to CSS.
+
 Version: 1.0.5
 - Theme URI added 
 - Author URI added
