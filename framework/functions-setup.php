@@ -60,15 +60,15 @@ add_action( 'after_setup_theme', function() {
 		);
 
 		/**
+		 * By adding add_theme_support( 'align-wide' );, this feature when enabled allows you to use align wide and align full.
+		 */
+		add_theme_support( 'align-wide' );
+
+		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
 		 * also known as featured image. If you need to use conditional, please consider using has_post_thumbnail.
 		 */
 		add_theme_support( 'post-thumbnails' );
-
-		/**
-		 * 
-		 */
-		add_theme_support( 'align-wide' );
 
 		/**
 		 * By add_image_size( 'initiator-small-thumbnails', 324, 324, true );. This should be used for content in the home for blogs.
