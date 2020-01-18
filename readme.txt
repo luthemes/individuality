@@ -27,6 +27,7 @@ Version: 1.0.6
 - Add Template Home
 - Add Support for Align Wide and Adjust CSS according to it.
 - Change the Font Size for Entry Title so the H1 will be slightly different.
+- Update pot file
 - Minor Changes to CSS.
 
 Version: 1.0.5
