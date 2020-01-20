@@ -28,8 +28,6 @@ use Benlumia007\Backdrop\View\View as sidebar;
 				endif;
 			?>
 		</main>
-		<div id="widget-area" class="widget-area">
-			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
-		</div>
+		<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 	</section>
 <?php get_footer(); ?>
