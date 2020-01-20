@@ -25,6 +25,7 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 == Changelog ==
 Version: 1.0.7
 - Removed Additional Div from widget-area
+- Fixed CSS for home template
 
 Version: 1.0.6
 - Add Template Home
