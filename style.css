@@ -1010,7 +1010,8 @@ input[type="submit"] {
     font-size: 2.5em;
 }
 
-.content-area .post .entry-header .entry-title {
+.content-area .post .entry-header .entry-title,
+.content-area .portfolio .entry-header .entry-title {
 	color: #000000;
 	font-size: 2.625em;
 	margin: 0 0 0.125em 0;
