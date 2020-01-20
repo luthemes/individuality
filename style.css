@@ -574,6 +574,14 @@ input[type="submit"] {
 /**
  *  7.0 - Clearings
  */
+.post-navigation:before,
+.post-navigation:after,
+.posts-navigation:before,
+.posts-navigation:after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
 /**
  *  8.0 - Navigation (Links)
