@@ -951,13 +951,6 @@ input[type="submit"] {
 /**
  * 14.0 - Basic Structure (Content)
  */
-.site-content {
-	padding: 3em;
-}
-
-.home .site-content {
-	padding: 0;
-}
 
 /**
  * 15.0 - Basic Structure (Aside)
@@ -985,9 +978,13 @@ input[type="submit"] {
  * 17.0 - Content (Posts and Pages)
  */
  .content-area {
+	line-height: 1.8em;
+	margin: 3em auto;
+	max-width: 50.625em;
+}
+
+.page-template-home .content-area {
 	margin: 0 auto;
-	padding: 0 1.125em;
-	max-width: 44.750em;
 }
 
 .content-area .post {
