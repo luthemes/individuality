@@ -19,8 +19,6 @@ use Benlumia007\Backdrop\View\View as sidebar;
 				comments_template();
 			?>
 		</main>
-		<div id="widget-area" class="widget-area">
-			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
-		</div>
+		<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 	</section>
 <?php get_footer(); ?>
