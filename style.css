@@ -987,12 +987,14 @@ input[type="submit"] {
  */
  .content-area {
 	line-height: 1.8em;
-	margin: 3em auto;
+	margin: 0 auto;
+	padding: 3em 1.125em;
 	max-width: 50.625em;
 }
 
 .page-template-home .content-area {
 	margin: 0 auto;
+	padding: 0;
 }
 
 .content-area .post {
@@ -1092,6 +1094,11 @@ input[type="submit"] {
 }
 
 .sticky {}
+
+.portfolio-grid ul,
+.portfolio-grid li {
+	list-style-type: none;
+}
 
 .portfolio-grid {
 	display: grid;
