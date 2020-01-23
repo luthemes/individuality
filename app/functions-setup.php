@@ -60,6 +60,11 @@ add_action( 'after_setup_theme', function() {
 		);
 
 		/**
+		 * 
+		 */
+		add_theme_support( 'wp-block-styles' );
+
+		/**
 		 * By adding add_theme_support( 'align-wide' );, this feature when enabled allows you to use align wide and align full.
 		 */
 		add_theme_support( 'align-wide' );
