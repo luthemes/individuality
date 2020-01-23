@@ -65,6 +65,12 @@ add_action( 'after_setup_theme', function() {
 		add_theme_support( 'align-wide' );
 
 		/**
+		 * By adding add_theme_support( 'editor-styles' );. This will add styles to the front end.
+		 */
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'assets/css/editor-styles.css' );
+
+		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
 		 * also known as featured image. If you need to use conditional, please consider using has_post_thumbnail.
 		 */
