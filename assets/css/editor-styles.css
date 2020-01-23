@@ -3,6 +3,7 @@
  *
  *  1.0 - Elements
  *  2.0 - Typography
+ *  3.0 - Alignments
  */
 
 /**
@@ -22,6 +23,18 @@ body {
     text-align: center;
 }
 
+/**
+ *  3.0 - Alignments
+ */
+.wp-block[data-align="wide"] {
+    max-width: 73.125em;
+}
+
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
 .wp-block {
     max-width: 50.625em;
 }
+
