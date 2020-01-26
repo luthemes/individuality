@@ -5,7 +5,7 @@ Tags:
 Requires at least: 5.0
 Tested up to: 5.0
 Requires PHP: 7.0
-Stable tag: 1.0.7
+Stable tag: 1.0.9
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,21 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.0.9
+
+
+Version: 1.0.8
+- updated for portfolio stuff.
+- fixed display of portfolio
+- changed theme/author uri
+- updated and rename framework to app
+- rename framework to app
+- add editor styles for blocks
+- add an action to enqueue_block_editor_assets so that the google fonts
+- add body editor-post-title__input and wp-block
+- add theme support wp-block-styles
+- add alignments for block editor
+
 Version: 1.0.7
 - Removed Additional Div from widget-area
 - Fixed CSS for home template
