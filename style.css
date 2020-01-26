@@ -574,6 +574,8 @@ input[type="submit"] {
 /**
  *  7.0 - Clearings
  */
+.site-content:before,
+.site-content:after,
 .post-navigation:before,
 .post-navigation:after,
 .posts-navigation:before,
@@ -1633,6 +1635,69 @@ p.comment-awaiting-moderation {
 /**
  * 24.0 - Galleries
  */
+.wp-block-gallery,
+.blocks-gallery-grid,
+.wp-block-columns {
+	display: grid;
+	grid-gap: 1.125em;
+}
+
+.wp-block-gallery.alignleft,
+.wp-block-gallery.aligncenter,
+.wp-block-gallery.alignright {
+	margin: 1.125em;
+}
+
+.wp-block-gallery .blocks-gallery-image,
+.wp-block-gallery .blocks-gallery-item,
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
+	margin: 0;
+}
+
+.wp-block-gallery.columns-2 .blocks-gallery-grid,
+.wp-block-columns.has-2-columns {
+	grid-template-columns: repeat( 2, 1fr );
+}
+
+.wp-block-gallery.columns-3 .blocks-gallery-grid,
+.wp-block-columns.has-3-columns {
+	grid-template-columns: repeat( 3, 1fr);
+}
+
+.wp-block-gallery.columns-4 .blocks-gallery-grid,
+.wp-block-columns.has-4-columns {
+	grid-template-columns: repeat( 4, 1fr );
+}
+
+.wp-block-gallery.columns-5 .blocks-gallery-grid,
+.wp-block-columns.has-5-columns {
+	grid-template-columns: repeat( 5, 1fr );
+}
+
+.wp-block-gallery.columns-6 .blocks-gallery-grid,
+.wp-block-columns.has-6-columns {
+	grid-template-columns: repeat( 6, 1fr );
+}
+
+.wp-block-gallery.columns-7 .blocks-gallery-grid,
+.wp-block-columns.has-7-columns {
+	grid-template-columns: repeat( 7, 1fr );
+}
+
+.wp-block-gallery.columns-8 .blocks-gallery-grid,
+.wp-block-columns.has-8-columns {
+	grid-template-columns: repeat( 8, 1fr );
+}
+
+.wp-block-gallery.columns-9 .blocks-gallery-grid,
+.wp-block-columns.has-9-columns {
+	grid-template-columns: repeat( 9, 1fr );
+}
+
+.wp-block-columns .wp-block-column p {
+	padding: 1.125em;
+}
 
 /**
  * 25.0 - Media Queries (Mobile Small 30em (480px))
@@ -2000,6 +2065,26 @@ p.comment-awaiting-moderation {
 	}
 
 	.dropdown-toggle {
-		display: none
+		display: none;
 	}
+
+    .wp-block-gallery.columns-2 .blocks-gallery-image,
+    .wp-block-gallery.columns-2 .blocks-gallery-item,
+    .wp-block-gallery.columns-3 .blocks-gallery-image,
+    .wp-block-gallery.columns-3 .blocks-gallery-item,
+    .wp-block-gallery.columns-4 .blocks-gallery-image,
+    .wp-block-gallery.columns-4 .blocks-gallery-item,
+    .wp-block-gallery.columns-5 .blocks-gallery-image,
+    .wp-block-gallery.columns-5 .blocks-gallery-item,
+    .wp-block-gallery.columns-6 .blocks-gallery-image,
+    .wp-block-gallery.columns-6 .blocks-gallery-item,
+    .wp-block-gallery.columns-7 .blocks-gallery-image,
+    .wp-block-gallery.columns-7 .blocks-gallery-item,
+    .wp-block-gallery.columns-8 .blocks-gallery-image,
+    .wp-block-gallery.columns-8 .blocks-gallery-item,
+    .wp-block-gallery.columns-9 .blocks-gallery-image,
+    .wp-block-gallery.columns-9 .blocks-gallery-item {
+        width: 100%;
+        margin-right: 0;
+    }
 }
