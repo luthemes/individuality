@@ -24,7 +24,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 
 == Changelog ==
 Version: 1.0.9
-
+- make sure that the wp-block-columns is converted to grid
+- Add additional clearings
 
 Version: 1.0.8
 - updated for portfolio stuff.
