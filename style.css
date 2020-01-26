@@ -576,6 +576,8 @@ input[type="submit"] {
  */
 .site-content:before,
 .site-content:after,
+.content-area:before,
+.content-area:after,
 .post-navigation:before,
 .post-navigation:after,
 .posts-navigation:before,
