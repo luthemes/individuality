@@ -28,6 +28,7 @@ Version: 1.1.0
 - wrong prefix in functions.php
 - add wp_body_open();
 - add skip link
+- remove copyright from the footer
 
 Version: 1.0.9
 - make sure that the wp-block-columns is converted to grid

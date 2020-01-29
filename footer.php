@@ -15,15 +15,6 @@ use Benlumia007\Backdrop\View\View as menu;
 		<div class="site-info">
 			<?php
 			printf(
-				// Translators: 1 = Date, 2 = Site Link.
-				esc_html__( 'Copyright &#169; %1$s. %2$s', 'individuality' ),
-				absint( date_i18n( 'Y' ) ),
-				site::render( 'site-link' ) // phpcs:ignore
-			);
-			?>
-			<br />
-			<?php
-			printf(
 				// Translators: 1 = WordPress Link, 2 = Theme Link.
 				esc_html__( 'Powered By %1$s and %2$s', 'individuality' ),
 				site::render( 'wp-link' ), // phpcs:ignore
