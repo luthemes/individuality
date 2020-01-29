@@ -9,7 +9,8 @@ Stable tag: 1.1.0
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Short description of the theme.
+Individuality WordPress Theme, Copyright (C) 2019-2020, Benjamin Lu
+Individuality is distributed under the terms of the GNU GPL
 
 == Description ==
 
