@@ -1638,7 +1638,6 @@ p.comment-awaiting-moderation {
  * 24.0 - Galleries
  */
 .wp-block-gallery,
-.blocks-gallery-grid,
 .wp-block-columns {
 	display: grid;
 	grid-gap: 1.125em;
@@ -1657,42 +1656,42 @@ p.comment-awaiting-moderation {
 	margin: 0;
 }
 
-.wp-block-gallery.columns-2 .blocks-gallery-grid,
+.wp-block-gallery.columns-2,
 .wp-block-columns.has-2-columns {
 	grid-template-columns: repeat( 2, 1fr );
 }
 
-.wp-block-gallery.columns-3 .blocks-gallery-grid,
+.wp-block-gallery.columns-3,
 .wp-block-columns.has-3-columns {
 	grid-template-columns: repeat( 3, 1fr);
 }
 
-.wp-block-gallery.columns-4 .blocks-gallery-grid,
+.wp-block-gallery.columns-4,
 .wp-block-columns.has-4-columns {
 	grid-template-columns: repeat( 4, 1fr );
 }
 
-.wp-block-gallery.columns-5 .blocks-gallery-grid,
+.wp-block-gallery.columns-5,
 .wp-block-columns.has-5-columns {
 	grid-template-columns: repeat( 5, 1fr );
 }
 
-.wp-block-gallery.columns-6 .blocks-gallery-grid,
+.wp-block-gallery.columns-6,
 .wp-block-columns.has-6-columns {
 	grid-template-columns: repeat( 6, 1fr );
 }
 
-.wp-block-gallery.columns-7 .blocks-gallery-grid,
+.wp-block-gallery.columns-7,
 .wp-block-columns.has-7-columns {
 	grid-template-columns: repeat( 7, 1fr );
 }
 
-.wp-block-gallery.columns-8 .blocks-gallery-grid,
+.wp-block-gallery.columns-8,
 .wp-block-columns.has-8-columns {
 	grid-template-columns: repeat( 8, 1fr );
 }
 
-.wp-block-gallery.columns-9 .blocks-gallery-grid,
+.wp-block-gallery.columns-9,
 .wp-block-columns.has-9-columns {
 	grid-template-columns: repeat( 9, 1fr );
 }
@@ -1784,7 +1783,7 @@ p.comment-awaiting-moderation {
         margin: 1em 1em 3.6em 1em;
 	}
 
-	.wp-block-gallery.columns-3 .blocks-gallery-grid {
+	.wp-block-gallery.columns-3  {
 		grid-template-columns: repeat( 1, 1fr );
 	}
 	
@@ -1912,11 +1911,11 @@ p.comment-awaiting-moderation {
         margin: 1em 1em 3.6em 1em;
 	}
 
-	.wp-block-gallery.columns-3 .blocks-gallery-grid {
+	.wp-block-gallery.columns-3  {
 		grid-template-columns: repeat( 2, 1fr );
 	}
 
-	.wp-block-gallery.columns-4 .blocks-gallery-grid {
+	.wp-block-gallery.columns-4  {
 		grid-template-columns: repeat( 2, 1fr );
 	}
 	
@@ -1988,11 +1987,11 @@ p.comment-awaiting-moderation {
         margin: 1em 1em 3.6em 1em;
 	}
 
-	.wp-block-gallery.columns-3 .blocks-gallery-grid {
+	.wp-block-gallery.columns-3  {
 		grid-template-columns: repeat( 2 1fr );
 	}
 
-	.wp-block-gallery.columns-4 .blocks-gallery-grid {
+	.wp-block-gallery.columns-4  {
 		grid-template-columns: repeat( 2, 1fr );
 	}
 	

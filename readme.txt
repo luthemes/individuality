@@ -23,6 +23,9 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.1.0
+- Fixed the wp-block-gallery grid system.
+
 Version: 1.0.9
 - make sure that the wp-block-columns is converted to grid
 - Add additional clearings
