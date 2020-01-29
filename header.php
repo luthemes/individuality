@@ -20,6 +20,7 @@ use Benlumia007\Backdrop\View\View as menu;
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="container" class="site-container">
 	<header id="header" class="site-header">
 		<div class="branding-navigation">

@@ -26,6 +26,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 Version: 1.1.0
 - Fixed the wp-block-gallery grid system.
 - wrong prefix in functions.php
+- add wp_body_open();
+- add skip link
 
 Version: 1.0.9
 - make sure that the wp-block-columns is converted to grid

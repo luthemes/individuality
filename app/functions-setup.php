@@ -102,3 +102,15 @@ add_action( 'after_setup_theme', function() {
 		load_theme_textdomain( 'individuality', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}
+
+add_action(
+	'wp_body_open', function() {
+		echo '<a class="skip-link screen-reader-text" href="#container">' . esc_html__( 'Skip to the content', 'individuality' ) . '</a>';
+	}, 5
+);
