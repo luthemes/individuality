@@ -993,7 +993,7 @@ input[type="submit"] {
 	line-height: 1.8em;
 	margin: 0 auto;
 	padding: 3em 1.125em;
-	max-width: 50.625em;
+	max-width: 52.875em;
 }
 
 .page-template-home .content-area {
@@ -1677,7 +1677,12 @@ p.comment-awaiting-moderation {
     .primary-navigation.toggled .nav-menu {
         display: block;
         margin: 1em 1em 3.6em 1em;
-    }
+	}
+	
+	.post-thumbnail.alignwide {
+		margin: 0 -1.125em;
+		max-width: 30em;
+	}
  }
 
 /**
@@ -1719,6 +1724,11 @@ p.comment-awaiting-moderation {
     .primary-navigation.toggled .nav-menu {
         display: block;
         margin: 1em 1em 3.6em 1em;
+	}
+
+	.post-thumbnail.alignwide {
+		margin: 0 -1.125em;
+		max-width: 37.50em;
 	}
 }
 
@@ -1804,6 +1814,11 @@ p.comment-awaiting-moderation {
         display: block;
         margin: 1em 1em 3.6em 1em;
 	}
+
+	.post-thumbnail.alignwide {
+		margin: 0 -6.688em;
+		max-width: 46em;
+	}
 }
 
 /**
@@ -1851,6 +1866,11 @@ p.comment-awaiting-moderation {
     .primary-navigation.toggled .nav-menu {
         display: block;
         margin: 1em 1em 3.6em 1em;
+	}
+
+	.post-thumbnail.alignwide {
+		margin: 0 -1.125em;
+		max-width: 48em;
 	}
 }
 
@@ -1931,6 +1951,11 @@ p.comment-awaiting-moderation {
 
 	.dropdown-toggle {
 		display: none
+	}
+
+	.post-thumbnail.alignwide {
+		margin: 0 -6.688em;
+		max-width: 64em;
 	}
 }
 
