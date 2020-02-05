@@ -1639,9 +1639,9 @@ p.comment-awaiting-moderation {
  */
 
 /**
- * 25.0 - Media Queries (Mobile Small 30em (480px))
+ * 25.0 - Media Queries ( Mobile Small 30em ( 375px ) )
  */
- @media screen and (max-width: 30em) {
+ @media screen and (max-width: 23.438em) {
 	.site-container {
 		margin: 0;
 		padding: 0;
@@ -1651,6 +1651,92 @@ p.comment-awaiting-moderation {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
+	}
+
+	.content-area .post .entry-header .entry-title,
+	.content-area .portfolio .entry-header .entry-title {
+		line-height: 1.125em;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+	}
+	
+	.post-thumbnail.alignwide {
+		margin: 0 -1.125em;
+		max-width: 30em;
+	}
+ }
+
+/**
+ * 25.0 - Media Queries (Mobile Small 30em (480px))
+ */
+ @media screen and (min-width: 376px ) and (max-width: 30em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
 	}
 
     .menu-toggle,
@@ -1700,6 +1786,20 @@ p.comment-awaiting-moderation {
 		grid-gap: 0;
 	}
 
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
+	}
+
     .menu-toggle,
     .primary-navigation.toggled ul {
         display: block;
@@ -1747,6 +1847,20 @@ p.comment-awaiting-moderation {
 		grid-gap: 0;
 	}
 
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
+	}
+
     .menu-toggle,
     .primary-navigation.toggled ul {
         display: block;
@@ -1787,6 +1901,26 @@ p.comment-awaiting-moderation {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
 	}
 
     .menu-toggle,
@@ -1842,6 +1976,26 @@ p.comment-awaiting-moderation {
 		grid-gap: 0;
 	}
 
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
+	}
+
     .menu-toggle,
     .primary-navigation.toggled ul {
         display: block;
@@ -1878,6 +2032,73 @@ p.comment-awaiting-moderation {
  * 30.0 - Media Queries (Tablet Large 64em (1024px))
  */
  @media screen and (min-width: 48.063em) and (max-width: 64em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.site-header .branding-navigation .site-branding .site-title {
+		float: none;
+		font-size: 2.625em;
+		padding: 0.375em 0.375em 0 0.375em;
+		text-align: center;
+	}
+	
+	.site-header .branding-navigation .site-branding .site-description {
+		color: #959595;
+		float: none;
+		padding: 0 0 1em 0;
+		text-align: center;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+	}
+
+	.post-thumbnail.alignwide {
+		margin: 0 -1.125em;
+		max-width: 64em;
+	}
+}
+
+/**
+ * 31.0 - Media Queries (Desktop 73.125em 1170px))
+ */
+ @media screen and (min-width: 1025px ) and (max-width: 73.125em) {
     .primary-navigation {
         clear: none;
         float: left;
@@ -1984,17 +2205,9 @@ p.comment-awaiting-moderation {
 		background: #000;
 		color: #fff;
 	}
-
-	.post-thumbnail.alignwide {
-		margin: 0 -6.688em;
-		max-width: 64em;
-	}
 }
 
-/**
- * 31.0 - Media Queries (Desktop 73.125em 1170px))
- */
- @media screen and (min-width: 73.125em) {
+@media screen and (min-width: 1171px) {
     .primary-navigation {
         clear: none;
         float: left;
