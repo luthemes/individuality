@@ -7,7 +7,7 @@
  * License:        GNU General Public License v2.0 or later
  * License URI:    https://www.gnu.org/licenses/gpl-2.0.html
  * Tags:           grid-layout, one-column, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready, blog
- * Version:        1.1.2
+ * Version:        1.1.3
  * Text Domain:    individuality
  */
 
@@ -1878,79 +1878,111 @@ p.comment-awaiting-moderation {
  * 30.0 - Media Queries (Tablet Large 64em (1024px))
  */
  @media screen and (min-width: 48.063em) and (max-width: 64em) {
-	.main-navigation {
-		padding: 0.5em;
-	}
-
-	.primary-navigation {
-		width: 100%;
-	}
-
-	.primary-navigation ul,
-	.primary-navigation li {
-		list-style: none;
-		margin: 0;
+    .primary-navigation {
+        clear: none;
+        float: left;
+        width: 100%;
+    }
+    
+	/* Position the menu in the header */
+	.primary-navigation,
+	.primary-navigation.toggled {
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
 		padding: 0;
 	}
-
-	.primary-navigation ul {
-		background: transparent;
-		text-align: right;
+	
+	.primary-navigation ul,
+	.primary-navigation.toggled ul {
+		background: #fcfcfc;
+		max-height: none;
+		padding-left: 0;
+		text-align: center;
+        
 	}
-
+	
+	.primary-navigation.toggled ul {
+		overflow-y: visible;
+	}
+	
+	/* Display the menu items in a horizontal order */
 	.primary-navigation li {
-		border-top: none;
-		border-top: none;
 		display: inline-block;
+		border: none;
 	}
-
-	.primary-navigation a {
-		color: #000000;
+	
+	/* Add an outline to the drop-down menus */
+	.primary-navigation ul ul {
+		outline: 1px solid #333;
+	}
+	
+	/* Left-align drop-down menu items */
+	.primary-navigation li li {
 		display: block;
-		padding: 0.5em 1em;
+		text-align: left;
 	}
-
+    
+    .primary-navigation a {
+		color: #000;
+        padding: 0.5em 1em;
+    }
+	
+	.primary-navigation a,
+	.primary-navigation ul ul li:last-child a {
+		border-bottom: none;
+	}
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+	
+	/* Add an outline on hovered and focused menu items */
 	.primary-navigation a:hover,
 	.primary-navigation a:focus {
+		background: transparent;
 		color: #000000;
-		display: block;
-		padding: 0.5em 1em;
+		text-decoration: underline;
+		outline: solid 1px #b3b3b3;
 	}
-
-	.primary-navigation ul ul {
-		background: #000000;
-		float: left;
-		display: none;
-		left: -0.5em;
-		padding: 0;
+	
+	/* Create hover and focus contrast on drop-down items */
+	.primary-navigation li li a:hover,
+	.primary-navigation li li a:focus {
+		background: #eee;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	/* Position drop-down menus absolutely */
+	.primary-navigation ul ul.toggled-on {
+        background: #000000;
+		display: block;
+		margin-left: 0;
 		position: absolute;
-		text-align: left;
-		z-index: 99999;
-	}
-
-	.primary-navigation ul ul a {
-		color: #ffffff;
+        right: 0;
 		width: 17em;
+		z-index: 10;
 	}
-
-	.primary-navigation ul li:hover > ul {
-		border: 0.063em solid #666666;
-		display: block;
-		padding-left: 0;
+	
+	.primary-navigation ul ul ul.toggled-on {
+		right: 0;
+        padding-left: 1em;
+        position: relative;
 	}
-
-	.primary-navigation ul ul :hover > a {
-		background: #ffffff;
-		color: #000000;
-		transition: ease-in-out 0.4s;
+	
+	/* Indent 3rd level drop-down menus */
+	.primary-navigation ul ul ul a {
+		padding-left: 2em;
 	}
-
-	.primary-navigation .menu-item-has-children > a, .primary-navigation .page_item_has_children > a {
-		padding-right: 1em;
+    
+    .nav-menu {
+		padding: 0.4em;
 	}
-
-	.dropdown-toggle {
-		display: none
+	
+	.dropdown-toggle:hover {
+		background: #000;
+		color: #fff;
 	}
 
 	.post-thumbnail.alignwide {
@@ -1963,78 +1995,110 @@ p.comment-awaiting-moderation {
  * 31.0 - Media Queries (Desktop 73.125em 1170px))
  */
  @media screen and (min-width: 73.125em) {
-	.main-navigation {
-		padding: 0.5em;
-	}
-
-	.primary-navigation {
-		width: 100%;
-	}
-
-	.primary-navigation ul,
-	.primary-navigation li {
-		list-style: none;
-		margin: 0;
+    .primary-navigation {
+        clear: none;
+        float: left;
+        width: 100%;
+    }
+    
+	/* Position the menu in the header */
+	.primary-navigation,
+	.primary-navigation.toggled {
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
 		padding: 0;
 	}
-
-	.primary-navigation ul {
-		background: transparent;
-		text-align: right;
+	
+	.primary-navigation ul,
+	.primary-navigation.toggled ul {
+		background: #fcfcfc;
+		max-height: none;
+		padding-left: 0;
+		text-align: center;
+        
 	}
-
+	
+	.primary-navigation.toggled ul {
+		overflow-y: visible;
+	}
+	
+	/* Display the menu items in a horizontal order */
 	.primary-navigation li {
-		border-top: none;
-		border-top: none;
 		display: inline-block;
+		border: none;
 	}
-
-	.primary-navigation a {
-		color: #000000;
+	
+	/* Add an outline to the drop-down menus */
+	.primary-navigation ul ul {
+		outline: 1px solid #333;
+	}
+	
+	/* Left-align drop-down menu items */
+	.primary-navigation li li {
 		display: block;
-		padding: 0.5em 1em;
+		text-align: left;
 	}
-
+    
+    .primary-navigation a {
+		color: #000;
+        padding: 0.5em 1em;
+    }
+	
+	.primary-navigation a,
+	.primary-navigation ul ul li:last-child a {
+		border-bottom: none;
+	}
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+	
+	/* Add an outline on hovered and focused menu items */
 	.primary-navigation a:hover,
 	.primary-navigation a:focus {
+		background: transparent;
 		color: #000000;
-		display: block;
-		padding: 0.5em 1em;
+		text-decoration: underline;
+		outline: solid 1px #b3b3b3;
 	}
-
-	.primary-navigation ul ul {
-		background: #000000;
-		float: left;
-		display: none;
-		left: -0.5em;
-		padding: 0;
+	
+	/* Create hover and focus contrast on drop-down items */
+	.primary-navigation li li a:hover,
+	.primary-navigation li li a:focus {
+		background: #eee;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	/* Position drop-down menus absolutely */
+	.primary-navigation ul ul.toggled-on {
+        background: #000000;
+		display: block;
+		margin-left: 0;
 		position: absolute;
-		text-align: left;
-		z-index: 99999;
-	}
-
-	.primary-navigation ul ul a {
-		color: #ffffff;
+        right: 0;
 		width: 17em;
+		z-index: 10;
 	}
-
-	.primary-navigation ul li:hover > ul {
-		border: 0.063em solid #666666;
-		display: block;
-		padding-left: 0;
+	
+	.primary-navigation ul ul ul.toggled-on {
+		right: 0;
+        padding-left: 1em;
+        position: relative;
 	}
-
-	.primary-navigation ul ul :hover > a {
-		background: #ffffff;
-		color: #000000;
-		transition: ease-in-out 0.4s;
+	
+	/* Indent 3rd level drop-down menus */
+	.primary-navigation ul ul ul a {
+		padding-left: 2em;
 	}
-
-	.primary-navigation .menu-item-has-children > a, .primary-navigation .page_item_has_children > a {
-		padding-right: 1em;
+    
+    .nav-menu {
+		padding: 0.4em;
 	}
-
-	.dropdown-toggle {
-		display: none;
+	
+	.dropdown-toggle:hover {
+		background: #000;
+		color: #fff;
 	}
 }
