@@ -5,7 +5,7 @@ Tags:
 Requires at least: 5.0
 Tested up to: 5.0
 Requires PHP: 7.0
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,9 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.1.4
+- align right for the navigation  
+
 Version: 1.1.3
 - Fixed all media queries for navigation
 - Modify certain elements to fit into the right media queries
