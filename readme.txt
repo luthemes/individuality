@@ -25,7 +25,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 
 == Changelog ==
 Version: 1.1.4
-- align right for the navigation  
+- align right for the navigation
+- add a space between the content and continue reading
 
 Version: 1.1.3
 - Fixed all media queries for navigation
