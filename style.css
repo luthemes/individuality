@@ -1739,6 +1739,11 @@ p.comment-awaiting-moderation {
 		text-align: center;
 	}
 
+	.content-area .post .entry-header .entry-title,
+	.content-area .portfolio .entry-header .entry-title {
+		line-height: 1.125em;
+	}
+
     .menu-toggle,
     .primary-navigation.toggled ul {
         display: block;
@@ -2228,7 +2233,7 @@ p.comment-awaiting-moderation {
 		background: #fcfcfc;
 		max-height: none;
 		padding-left: 0;
-		text-align: center;
+		text-align: right;
         
 	}
 	
