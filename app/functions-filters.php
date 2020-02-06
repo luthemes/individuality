@@ -27,7 +27,7 @@ add_filter(
 	'excerpt_more',
 	function() {
 		global $post;
-		$more = __( 'continue reading...', 'individuality');
+		$more = __( ' continue reading...', 'individuality');
 		
 		return '<a class="read-more" href="' . esc_url( get_permalink( $post->ID ) ) . '">' . esc_html( $more ) . '</a>';
 	}
