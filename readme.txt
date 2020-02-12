@@ -24,6 +24,10 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.1.5
+- Theme URI Updated
+- Author URI Updated
+
 Version: 1.1.4
 - align right for the navigation
 - add a space between the content and continue reading
