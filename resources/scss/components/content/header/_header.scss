@@ -16,3 +16,38 @@
 //
 // 1.0 - Header
 //
+.site-header {
+    background: #fcfcfc;
+    border-bottom: 0.063em solid #f3f3f3;
+
+    .branding-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.125em;
+
+        .site-branding {
+            .site-title,
+            .site-description {
+                margin: 0;
+                padding: 0;
+            }
+
+            .site-title {
+                float: left;
+                font-size: 1.813em;
+                padding: 0.375em;
+
+                a {
+                    color: #757575;
+                    text-decoration: none;
+                }
+            }
+
+            .site-description {
+                color: #959595;
+                float: left;
+                padding: 1em;
+            }
+        }
+    }
+}
