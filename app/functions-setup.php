@@ -1,17 +1,17 @@
 <?php
 /**
- * Individuality ( functions-setup.php )
+ * Initiator ( functions-setup.php )
  *
- * @package     Individuality
+ * @package     Initiator
  * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://luthemes.com )
+ * @author      Benjamin Lu ( https://benjlu.com )
  */
 
 /**
  * Define namespace
  */
-namespace Individuality;
+namespace Initiator;
 
 /**
  * Setup Theme Support.
@@ -60,22 +60,6 @@ add_action( 'after_setup_theme', function() {
 		);
 
 		/**
-		 * 
-		 */
-		add_theme_support( 'wp-block-styles' );
-
-		/**
-		 * By adding add_theme_support( 'align-wide' );, this feature when enabled allows you to use align wide and align full.
-		 */
-		add_theme_support( 'align-wide' );
-
-		/**
-		 * By adding add_theme_support( 'editor-styles' );. This will add styles to the front end.
-		 */
-		add_theme_support( 'editor-styles' );
-		add_editor_style( 'assets/css/editor-styles.css' );
-
-		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
 		 * also known as featured image. If you need to use conditional, please consider using has_post_thumbnail.
 		 */
@@ -94,23 +78,73 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * By add_image_size( 'initiator-large-thumbnails', 1170, 614, true );. This should be used for content that has no sidebars.
 		 */
-		add_image_size( 'individuality-large-thumbnails', 1170, 614, true );
+		add_image_size( 'initiator-large-thumbnails', 1170, 614, true );
+
+		/**
+		 * By add_theme_support( 'wp-block-styles' );. This should enable block styles on the frontend.
+		 */
+		add_theme_support( 'wp-block-styles' );
+
+		/**
+		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
+		 */
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'assets/css/editor-styles.css' );
+
+		/**
+		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
+		 */
+		add_theme_support( 'align-wide' );
 
 		/**
 		 * Load theme translation.
 		 */
-		load_theme_textdomain( 'individuality', get_parent_theme_file_path( '/languages ' ) );
+		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
 
-if ( ! function_exists( 'wp_body_open' ) ) {
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
-	}
-}
+/**
+ * Add support for custom header.
+ */
+add_action( 'after_setup_theme', function() {
 
-add_action(
-	'wp_body_open', function() {
-		echo '<a class="skip-link screen-reader-text" href="#container">' . esc_html__( 'Skip to the content', 'individuality' ) . '</a>';
-	}, 5
-);
+		add_theme_support( 'custom-header',
+			[
+				'default-text-color' => 'ffffff',
+				'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
+				'height'             => 1200,
+				'max-width'          => 2000,
+				'width'              => 2000,
+				'flex-height'        => false,
+				'flex-width'         => false,
+			]
+		);
+
+		register_default_headers(
+			array(
+				'header-image' => array(
+					'url'           => '%s/assets/images/header-image.jpg',
+					'thumbnail_url' => '%s/assets/images/header-image.jpg',
+					'description'   => esc_html__( 'Header Image', 'initiator' ),
+				),
+			)
+		);
+} );
+
+/**
+ * Add Support Custom Background
+ */
+add_action( 'after_setup_theme', function() {
+
+	add_theme_support( 'custom-background', [
+		'default-image'          => '',
+		'default-preset'         => 'default',
+		'default-position-x'     => 'left',
+		'default-position-y'     => 'top',
+		'default-size'           => 'auto',
+		'default-repeat'         => 'repeat',
+		'default-attachment'     => 'scroll',
+		'default-color'          => '',
+	] );
+
+} );

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "1.0.5",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "b3e73c9091d8963329f2cd0589aee440ecb64a3e"
+                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/b3e73c9091d8963329f2cd0589aee440ecb64a3e",
-                "reference": "b3e73c9091d8963329f2cd0589aee440ecb64a3e",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/3dd08858b47127d7d002bebe9a6fed71e02528ed",
+                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,13 @@
             "autoload": {
                 "psr-4": {
                     "Benlumia007\\Backdrop\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Entry/functions-entry.php",
+                    "src/Site/functions-site.php",
+                    "src/Template/functions-template.php",
+                    "src/View/functions-view.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -46,7 +52,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2019-06-27T00:08:15+00:00"
+            "time": "2020-04-11T05:21:03+00:00"
         }
     ],
     "packages-dev": [],
@@ -58,5 +64,6 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
