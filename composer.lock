@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed"
+                "reference": "e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/3dd08858b47127d7d002bebe9a6fed71e02528ed",
-                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b",
+                "reference": "e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,11 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2020-04-11T05:21:03+00:00"
+            "support": {
+                "issues": "https://github.com/benlumia007/backdrop-core/issues",
+                "source": "https://github.com/benlumia007/backdrop-core/tree/1.1.2"
+            },
+            "time": "2020-11-18T19:09:35+00:00"
         }
     ],
     "packages-dev": [],
@@ -65,5 +69,5 @@
         "php": ">=5.6"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
