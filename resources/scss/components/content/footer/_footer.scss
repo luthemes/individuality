@@ -16,3 +16,17 @@
 //
 // 1.0 - Footer
 //
+.site-footer {
+    background: #fcfcfc;
+    border-top: 0.063em solid #f3f3f3;
+    padding: 1.125em;
+    text-align: center;
+
+    .site-info {
+        color: #959595;
+
+        a {
+            color: #757575;
+        }
+    }
+}
