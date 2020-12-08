@@ -16,3 +16,15 @@
 //
 // 1.0 - Content
 //
+.content-area {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 3em 1.125em;
+}
+
+.page-template {
+    .content-area {
+        margin: 0 auto;
+        padding: 0;
+    }
+}
