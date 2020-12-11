@@ -17,283 +17,300 @@
 // 1.0 - Primary Navigation
 //
 .primary-navigation {
+	display: block;
+	margin: 0;
+}
+
+/* Styling the links */
+.primary-navigation a {
+	display: block;
+	font-size: 1.125rem;
+	padding: 1.25em 0.75em;
+	color: #fff;
+	background: #000000;
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 100%;
+	white-space: normal;
+}
+
+/* Background color change on Hover */
+.primary-navigation .nav-menu a:hover,
+.primary-navigation .nav-menu a:focus { 
+	background-color: #606060;
+}
+
+/* Set menu item's width to 100% */
+.primary-navigation .nav-menu li {
+	display: block;
+	width: 100%;
+}
+
+/* Esto capaz que no hace falta */
+.primary-navigation .nav-menu li ul li:hover,
+.primary-navigation .nav-menu li ul li:focus {
+	background-color: #606060;
+}
+
+/* Styling the toggle buttons */
+.menu-toggle {
+	background: #000000;
+	padding: 0.75em 0.625em 0.625em 0.75em;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #cc0058;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	top: 3em;
+	right: 1em;
+}
+
+.menu-toggle .fontawesome {
+	vertical-align: text-bottom;
+}
+
+.menu-toggle .fontawesome:before {
+	content: '\f228';
+}
+
+.toggled .menu-toggle {
+	background-color: #606060;
+}
+
+.toggled .menu-toggle .fontawesome:before {
+	content: '\f158';
+}
+
+.dropdown-toggle {
+	background-color: transparent;
+	padding: 1.1em;
+	position: absolute;
+	top: 1em;
+	right: 0.5em;
+	border: 1px solid transparent;
+	border-left: 1px solid #bbb;
+	border-radius: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+	border: 1px dashed;
+}
+
+.dropdown-toggle .fontawesome {
+    font-family: 'Font Awesome 5 Free';
+}
+
+.dropdown-toggle .fontawesome:before {
+	content: "\f078";
+}
+
+.toggled-on > .dropdown-toggle .fontawesome:before {
+	content: "\f077";
+}
+
+/* Hide Submenus by default using absolute positioning instead of display:none;. */
+.primary-navigation .nav-menu,
+.primary-navigation .nav-menu li,
+.primary-navigation .nav-menu ul,
+.primary-navigation .nav-menu li:hover > ul,
+.primary-navigation .nav-menu li:focus > ul {
+	position: absolute;
+	top: 100%;
+	left: -9999em;
+	color: #ff00ff;
+	padding: 0;
+	margin: 0;
+}
+
+/* Display the menu when clicked on Menu Toggle */
+.toggled .nav-menu {
     display: block;
-    width: 100%;
+    left: 0;
+    margin: 0.5em;
+	position: relative;
+	top: 0;
+}
 
-    ul {
-        display: block;
-        list-style: none;
-        margin: 0;
+.toggled .nav-menu li {
+	position: relative;
+	left: unset;
+}
 
-        ul {
-            display: none;
-            margin-left: 0.5em;
-        }
+.toggled .nav-menu li > .sub-menu {
+	display: none;
+}
 
-        li {
-            &:last-child {
-                a {
-                    border-bottom: none;
-                }
-            }
-        }
+.toggled .nav-menu .toggled-on > .sub-menu {
+	display: block;
+	position: relative;
+	left: 0;
+	top: 100%;
+}
 
-        .toggled-on {
-            display: block;
-        }
+.primary-navigation .nav-menu ul a,
+.primary-navigation .nav-menu ul ul a {
+	padding: 1.25em 0.75em;
+}
 
-        .current-menu-item {
-            > a {
-                font-weight: 700;
-            }
-        }
+.primary-navigation .nav-menu ul a {
+	padding: 1.25em 1.25em;
+}
 
-        .current-menu-ancestor {
-            > {
-                a {
-                    font-weight: 700;
-                }
-            }
-        }
+.primary-navigation .nav-menu ul ul a {
+	padding: 1.25em 1.75em;
+}
 
-        .current_page_item {
-            > {
-                a {
-                    font-weight: 700;
-                }
-            }
-        }
+.primary-navigation .nav-menu ul a,
+.primary-navigation .nav-menu ul ul a {
+	background-color: #444; 
+}
+	
+/* Second and following tiers submenus */
+.primary-navigation .nav-menu ul li {
+}
 
-        .current_page_ancestor {
-            > {
-                a {
-                    font-weight: 700;
-                }
-            }
-        }
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a { 
+	font-weight: 900;
+}
 
-        .nav-menu {
-            > {
-                ul {
-                    > {
-                        li {
-                            &:first-child {
-                                border-top: 0;
-                            }
-                        }
-                    }
-                }
-
-                li {
-                    &:first-child {
-                        border-top: 0;
-                    }
-                }
-            }
-        }
-    }
-    
-    .menu-item-has-children {
-        > {
-            a {
-                padding-right: 3em;
-            }
-        }
-    }
-
-    .page_item_has_children {
-        > {
-            a {
-                padding-right: 3em;
-            }
-        }
-    }
-    
-    li {
-        position: relative;
-    }
-
-    a {
-        
-        color: #ffffff;
-        display: block;
-        line-height: 1.5em;
-        padding: 0.5em 1em;
-        position: relative;
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-            background: #ffffff;
-            color: #000000;
-        }
-    }
-
-    .dropdown-toggle {
-        background: #000000;
-        border: 0.063em solid #ffffff;
-        -webkit-box-sizing: content-box;
-        -moz-box-sizing: content-box;
-        box-sizing: content-box;
-        color: #ffffff;
-        font-family: 'Font Awesome 5 Free';
-        height: 2em;
-        padding: 0;
-        position: absolute;
-        right: 0.250em;
-        top: 0.188em;
-        width: 2em;
-
-        &:after {
-            font-size: 1.125em;
-            content: "\f078";
-            left: 0;
-            line-height: 1.875em;
-            position: relative;
-            top: 0;
-            width: 1.875em;
-        }
-
-        &:hover,
-        &:focus {
-            background: #ffffff;
-            color: #000000;
-        }
-
-        &.toggle-on {
-            &:after {
-                content: "\f077";
-            }
-        }
-    }
-
-    &.toggled {
-        bottom: 0;
-        padding: 1em;
-        position: fixed;
-        z-index: 1;
-
-        ul {
-            max-height: calc(100vh - 8em);
-            overflow-y: auto;
-
-            ul {
-                display: none;
-
-                &.toggled-on,
-                &.toggled-on > ul {
-                    display: block;
-                }
-            }
-        }
-    }
-
-    .nav-menu {
-        background: #000000;
-        padding: 1em;
-    }
-
+@media screen and (max-width: 30em) {
     .menu-toggle {
-        background-color: #000;
-        border: solid 2px #fff;
-        bottom: 1em;
-        color: #fff;
-        display: none;
-        font-size: 1em;
-        left: 1em;
-        padding: 0.4em;
-        position: fixed;
-        transition: all ease-out 400ms;
-        z-index: 100;
-
-        &.hide {
-            bottom: -2.5em;
-        }
-
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-    }
-
-    .toggled {
-        .menu-toggle {
-            &.hide {
-                bottom: 1em;
-            }
-        }
+        top: 3.250em;
     }
 }
 
-@media screen and (min-width: 73.188em) {
-    .primary-navigation {
-        position: relative;
-		max-width: 100%;
-		margin: 0 auto;
-        padding: 0;
-
-        a {
-            color: #000000;
-
-            &:hover,
-            &:focus {
-                background: transparent;
-                color: #000000;
-                text-decoration: underline;
-                outline: solid 1px #b3b3b3;
-            }
-        }
-
-        ul {
-            padding: 0;
-            text-align: right;
-
-            li {
-                display: inline-block;
-
-                li {
-                    display: block;
-                    text-align: left;
-
-                    a {
-                        &:hover,
-                        &:focus {
-                            background: #eee;
-                            color: #000;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-
-            ul {
-                &.toggled-on {
-                    background: #000000;
-                    display: block;
-                    margin-left: 0;
-                    position: absolute;
-                    right: -14.750em;
-                    width: 17em;
-                    z-index: 10;       
-                }
-
-                ul {
-                    &.toggled-on {
-                        right: 0;
-
-                        position: relative;
-                    }
-                    
-                    a {
-                        padding-left: 2.5em;
-                    }
-                }
-            }
-        }
-
-        .nav-menu {
-            background: transparent;
-            padding: 0.5em
-        }
+@media screen and (min-width: 30.0625em) and (max-width: 600px) {
+    .menu-toggle {
+        top: 3.250em;
     }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-toggle {
+        top: 3.250em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-toggle {
+        top: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .menu-toggle,
+    .dropdown-toggle {
+        display: none;
+    }
+
+    .primary-navigation {
+        margin: 0.3em;
+    }
+    
+    .primary-navigation .primary-menu {
+        display: flex;
+        float: right;
+        position: static;
+        
+    }
+    
+    .primary-navigation .nav-menu li {
+        position: relative;
+        width: max-content;
+        left: unset;
+    }
+    
+    .primary-navigation .nav-menu ul li:first-child {
+        border-top: 0;
+    }
+
+    .primary-navigation a {
+        background: transparent;
+        color: #000000;
+    }
+    
+    .primary-navigation .nav-menu a,
+    .primary-navigation .nav-menu ul a,
+    .primary-navigation .nav-menu ul ul a {
+        padding: 0.75em 0.75em;
+    }
+    
+    /* Hide Dropdowns by Default
+     * and giving it a position of absolute */
+    .primary-navigation .nav-menu ul {
+        position: absolute; 
+        /* has to be the same number as the "line-height" of "nav a" */
+        top: 100%;
+        left: -9999em;
+        /*! border: 1px solid #606060; */
+    }
+        
+    /* Display Dropdowns on hover and focus */
+    .primary-navigation .nav-menu li:hover > ul,
+    .primary-navigation .nav-menu li:focus > ul,
+    .primary-navigation .nav-menu li.focus > ul {
+        left: 0;
+    }
+        
+    /* First Tier Dropdown */
+    .primary-navigation .nav-menu ul li {
+        position: relative;
+        width: 20em;
+    }
+    
+    /* Second, Third and more Tiers	
+     * We move the 2nd and 3rd etc tier dropdowns to the left
+     * by the amount of the width of the first tier.
+    */
+    .primary-navigation .nav-menu li li:hover > ul,
+    .primary-navigation .nav-menu li li:focus > ul,
+    .primary-navigation .nav-menu li li.focus > ul {
+        position: absolute;
+        top: 0;
+        left: -100%; 
+    }
+
+    /* Background color change on Hover */
+    .primary-navigation .nav-menu a:hover,
+    .primary-navigation .nav-menu a:focus { 
+        background-color: #ffffff;
+    }
+    
+    .primary-navigation .nav-menu ul a,
+    .primary-navigation .nav-menu ul a { 
+        color: #ffffff;
+    }
+
+    .primary-navigation .nav-menu ul a:hover,
+    .primary-navigation .nav-menu ul a:focus { 
+        background-color: #333333;
+        color: #ffffff;
+    }
+    
+    .menu-item-has-children > a:after,
+    .page_item_has_children > a:after {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f078";
+        vertical-align: bottom;
+        margin-left: 0.25em;
+    }
+    
+    .menu-item-has-children .menu-item-has-children > a:after,
+    .menu-item-has-children .page_item_has_children > a:after,
+    .page_item_has_children .menu-item-has-children > a:after,
+    .page_item_has_children .page_item_has_children > a:after {
+        content: "\f054";
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        right: 0.5em;
+        top: 50%;
+        transform: translate(0, -50%);
+    }    
 }

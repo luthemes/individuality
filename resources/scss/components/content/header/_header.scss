@@ -51,3 +51,47 @@
         }
     }
 }
+
+@media screen and (max-width: 30em) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+
+            .site-description {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 30.0625em) and (max-width: 600px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+
+            .site-description {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+    }
+}
