@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "1.1.2",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b"
+                "reference": "30bf8e88009189552a78b9a69b5cf28c3b4fc88e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b",
-                "reference": "e2b5508f9fc68d1a4a3e9d2cbd2a5d9d6d56f03b",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/30bf8e88009189552a78b9a69b5cf28c3b4fc88e",
+                "reference": "30bf8e88009189552a78b9a69b5cf28c3b4fc88e",
                 "shasum": ""
             },
             "require": {
@@ -54,9 +54,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/1.1.2"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/1.1.5"
             },
-            "time": "2020-11-18T19:09:35+00:00"
+            "time": "2020-12-11T06:49:22+00:00"
         }
     ],
     "packages-dev": [],
