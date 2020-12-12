@@ -1,11 +1,11 @@
 <?php
 /**
- * Initiator ( header.php )
+ * Individuality ( header.php )
  *
- * @package     Initiator
- * @copyright   Copyright (C) 2019. Benjamin Lu
- * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @package   Individuality
+ * @copyright Copyright (C) 2019-2020. Benjamin Lu
+ * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author    Benjamin Lu ( https://benjlu.com )
  */
 ?>
 <!doctype html>
@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="container" class="site-container">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'individuality' ) ?></a>
 	<header id="header" class="site-header">
 		<div class="branding-navigation">
 			<div class="site-branding">
