@@ -27,8 +27,8 @@ $individuality->menus = new Benlumia007\Backdrop\Menu\Menu(
 $individuality->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
 	$args = [
 		'primary' => [
-			'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
-			'desc' => esc_html__( 'Test', 'initiator' ),
+			'name' => esc_html__( 'Primary Sidebar', 'individuality' ),
+			'desc' => esc_html__( 'Test', 'individuality' ),
 		],
 	]
 );

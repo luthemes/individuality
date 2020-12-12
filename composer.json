@@ -1,5 +1,5 @@
 {
-    "name": "benlumia007/initiator",
+    "name": "benlumia007/individuality",
     "description": "Initiator is a starter theme designed to help theme authors using Backdrop Core Framework.",
     "keywords": [
         "wordpress",
@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Initiator\\": "app/"
+            "Individuality\\": "app/"
 		},
 		"files":[
 			"app/framework.php",

@@ -16,15 +16,134 @@
 //
 // 1.0 - Content
 //
-.content-area {
-    margin: 0 auto;
-    max-width: 50em;
-    padding: 3em 1.125em;
-}
-
 .page-template {
     .content-area {
         margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.content-area {
+    line-height: 1.8em;
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 3em 1.125em;
+
+    .sticky {
+        color: #000000;
+    }
+
+    .post {
+        margin-bottom: 3em;
+
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                font-size: 2.625em;
+                margin: 0 0 0.125em 0;
+                padding: 0;
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .entry-metadata {
+            text-align: center;
+
+            .fa-user {
+                padding-right: 0.313em;
+            }
+
+            .fa-calendar-alt,
+            .fa-comment {
+                padding: 0 0.313em 0 0.688em;
+            }
+
+            .entry-author {
+                a {
+                    border-bottom: 0.063em solid #0000ff;
+                    color: #0000ff;
+                    text-decoration: none;
+
+                    &:hover,
+                    &:focus {
+                        color: #ff0000;
+                    }
+                }
+            }
+
+            .entry-comments {
+                border-bottom: 0.063em solid #0000ff;
+                color: #0000ff;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: #ff0000;
+                }
+            }
+        }
+
+        .entry-excerpt,
+        .entry-content {
+            a {
+                border-bottom: 0.063em solid #0000ff;
+                color: #0000ff;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+
+    .page {
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                font-size: 2.625em;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .wp-caption {
+        max-width: 100%;
+        margin-bottom: 1.5em;
+    }
+    
+    .wp-caption img[class*="wp-image-"] {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .wp-caption-text { 
+        text-align: center; 
+    }
+    
+    .wp-caption .wp-caption-text,
+    .gallery-caption {
+        background: #eeeeee;
+        font-size: 14px;
+        padding: 0.313em;
+        text-align: center;
+    }
+    
+    .wp-caption p {
+        margin: 0;
         padding: 0;
     }
 }

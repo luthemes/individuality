@@ -16,7 +16,7 @@
 				<?php
 					if ( have_posts() ) :
 						while ( have_posts() ) : the_post();
-							Benlumia007\Backdrop\Template\get_template_part( 'content/content', get_post_format() );
+							Benlumia007\Backdrop\Template\get_template_part( 'content/content', 'home' );
 						endwhile;
 						the_posts_pagination();
 					else :
