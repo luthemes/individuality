@@ -21,7 +21,11 @@
 .entry-content:before,
 .entry-content:after,
 .page-links:before,
-.page-links:after {
+.page-links:after,
+.posts-navigation:before,
+.posts-navigation:after,
+.post-navigation:before,
+.post-navigation:after {
     clear: both;
     content: "";
     display: table;
