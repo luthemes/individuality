@@ -18,7 +18,7 @@ const rimraf  = require( 'rimraf' );
 const fs      = require( 'fs' );
 
 // Folder name to export the files to.
-let exportPath = 'initiator';
+let exportPath = 'individuality';
 
 // Theme root-level files to include.
 let files = [
@@ -44,6 +44,7 @@ let files = [
 let folders = [
 	'app',
 	'public',
+	'templates',
 	'vendor'
 ];
 
