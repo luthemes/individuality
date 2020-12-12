@@ -20,6 +20,11 @@
 			<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
 		</div>
 	</header>
+	<?php if ( has_post_thumbnail() ) { ?>
+		<figure class="post-thumbnail alignwide">
+			<?php the_post_thumbnail( 'individuality-large-thumbnails' ); ?>
+	<?php } ?>
+	</figure>
 	<div class="entry-excerpt">
 		<?php the_excerpt(); ?>
 	</div>
