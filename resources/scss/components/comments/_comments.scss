@@ -18,6 +18,17 @@
 //
 .comments-area {
     margin: 0.938em 0;  
+
+    a { 
+        border-bottom: 0.063em solid #0000ff;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            border-bottom: 0.063em solid #ff0000;
+            color: #ff0000;
+        }
+    }
 }
 
 .comments-title {

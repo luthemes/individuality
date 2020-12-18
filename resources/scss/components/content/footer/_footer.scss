@@ -24,9 +24,18 @@
 
     .site-info {
         color: #959595;
+        line-height: 1.8em;
 
         a {
-            color: #757575;
+            border-bottom: 0.063em solid #0000ff;
+            color: #0000ff;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                border-bottom: 0.063em solid #ff0000;
+                color: #ff0000;
+            }
         }
     }
 }
