@@ -17,7 +17,7 @@
 // 1.0 - Elements
 //
 body {
-	color: #677d89;
+	color: $body-color;
 	font-family: $font-family-body;
 }
 
@@ -28,4 +28,15 @@ img {
 
 figure {
     margin: 0;
+}
+
+a {
+	border-bottom: 0.063em solid $link-color;
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 0.063em solid $link-hover-color;
+		color: $link-hover-color;
+	}
 }
