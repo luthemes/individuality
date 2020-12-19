@@ -25,7 +25,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 
 == Changelog ==
 Version: 1.1.6
-- Updated 
+- Keyboard Navigation Ready
+- Content Links Updated for visibility 
 
 Version: 1.1.5
 - Theme URI Updated
