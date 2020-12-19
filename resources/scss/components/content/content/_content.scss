@@ -45,6 +45,7 @@
                 padding: 0;
 
                 a {
+                    border-bottom: none;
                     color: #000000;
                     text-decoration: none;
 
@@ -66,44 +67,6 @@
             .fa-comment {
                 padding: 0 0.313em 0 0.688em;
             }
-
-            .entry-author {
-                a {
-                    border-bottom: 0.063em solid #0000ff;
-                    color: #0000ff;
-                    text-decoration: none;
-
-                    &:hover,
-                    &:focus {
-                        color: #ff0000;
-                    }
-                }
-            }
-
-            .entry-comments {
-                border-bottom: 0.063em solid #0000ff;
-                color: #0000ff;
-                text-decoration: none;
-
-                &:hover,
-                &:focus {
-                    color: #ff0000;
-                }
-            }
-        }
-
-        .entry-excerpt,
-        .entry-content {
-            a {
-                border-bottom: 0.063em solid #0000ff;
-                color: #0000ff;
-                text-decoration: none;
-
-                &:hover,
-                &:focus {
-                    color: #ff0000;
-                }
-            }
         }
     }
 
@@ -115,6 +78,19 @@
                 font-size: 2.625em;
                 margin: 0;
                 padding: 0;
+            }
+        }
+    }
+
+    figcaption {
+        a {
+            border-bottom: 0.063em solid $link-color;
+            color: $link-color;
+
+            &:hover,
+            &:focus {
+                border-bottom: 0.063em solid $link-hover-color;
+                color: $link-hover-color;
             }
         }
     }
