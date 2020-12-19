@@ -23,16 +23,13 @@ let exportPath = 'individuality';
 // Theme root-level files to include.
 let files = [
 	'404.php',
-	'archive.php',
-	'author.php',
-	'changelog.md',
+	'archive.php',,
 	'comments.php',
 	'footer.php',
 	'functions.php',
 	'header.php',
 	'index.php',
 	'page.php',
-	'readme.md',
 	'readme.txt',
 	'screenshot.png',
 	'search.php',
