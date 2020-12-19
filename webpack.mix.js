@@ -51,15 +51,11 @@ mix.setPublicPath( 'public' );
  */
 mix.options( {
 	postCss        : [ require( 'postcss-preset-env' )() ],
-	processCssUrls : false
+	processCssUrls : false,
+	terser: {
+		extractComments: false,
+	  }
 } );
-
-/*
- * Builds sources maps for assets.
- *
- * @link https://laravel.com/docs/5.6/mix#css-source-maps
- */
-mix.sourceMaps();
 
 /*
  * Versioning and cache busting. Append a unique hash for production assets. If
