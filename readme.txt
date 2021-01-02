@@ -24,6 +24,9 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.1.7
+- Wrong Description
+
 Version: 1.1.6
 - Keyboard Navigation Ready
 - Content Links Updated for visibility 
