@@ -1,21 +1,12 @@
 //
-// Initiator ( _primary.scss )
+// Initiator ( _content.scss )
 //
-// @package     Initiator
-// @copyright   Copyright (C) 2019-2020. Benjamin Lu
-// @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
-// @author      Benjamin Lu ( https://benjlu.com )
-//
-
-//
-// Table of Content
-//
-// 1.0 - Primary Navigation
+// @package   Initiator
+// @copyright Copyright (C) 2019-2020. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://benjlu.com )
 //
 
-//
-// 1.0 - Primary Navigation
-//
 .primary-navigation {
 	display: block;
     margin: 0;
@@ -84,7 +75,7 @@
         list-style: none;
         color: #ff00ff;
         padding: 0;
-        margin: 0;
+		margin: 0;
     }
 
     .nav-menu {
@@ -108,7 +99,9 @@
 .menu-toggle {
     background: #000000;
     border: 0.063em solid #ffffff;
-    border-radius: 0.3125em;
+	border-radius: 0.3125em;
+	font-family: font-family( 'primary' );
+	font-size: 1rem;
     color: #ffffff;
     display: none;
     padding: 0.75em 0.625em 0.625em 0.75em;
@@ -121,7 +114,7 @@
     .nav-menu {
         display: block;
         left: 1.125em;
-        margin: 0 1.125em 0 1.125em 1.125em;
+        margin: 2rem 1.125em 0 1.125em 1.125em;
         right: 1.125em;
         position: fixed;
         top: 6em;
@@ -162,7 +155,13 @@
         display: block;
         position: fixed;
         top: 3.250em;
-    }
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
 }
 
 @media screen and (min-width: 30.0625em) and (max-width: 600px) {
@@ -170,7 +169,13 @@
         display: block;
         position: fixed;
         top: 3.250em;
-    }
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -178,7 +183,13 @@
         display: block;
         position: fixed;
         top: 3.250em;
-    }
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -191,7 +202,7 @@
 
 @media screen and (min-width: 1025px) {
     .primary-navigation {
-        margin: 0.3em;
+        margin: 0;
     }
     
     .primary-navigation .primary-menu {
@@ -219,7 +230,7 @@
     .primary-navigation .nav-menu a,
     .primary-navigation .nav-menu ul a,
     .primary-navigation .nav-menu ul ul a {
-        padding: 0.75em 0.75em;
+        padding: 0.75em;
     }
     
     /* Hide Dropdowns by Default
