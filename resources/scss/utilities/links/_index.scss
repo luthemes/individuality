@@ -7,6 +7,14 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
-@import 'a11y/index';
-@import 'alignments/index';
-@import 'links/index';
+a {
+	border-bottom: 0.063rem solid #0000ff;
+	color: #0000ff;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		border-bottom: 0.063rem solid #ff0000;
+		color: #ff0000;
+	}
+}
