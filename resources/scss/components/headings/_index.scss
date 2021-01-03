@@ -1,0 +1,90 @@
+//
+// Individuality ( _content.scss )
+//
+// @package   Individuality
+// @copyright Copyright (C) 2019-2020. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://benjlu.com )
+//
+
+.site-header {
+    background: #fcfcfc;
+    border-bottom: 0.063em solid #f3f3f3;
+
+    .branding-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		grid-gap: 1.125em;
+		margin: 0.6rem;
+
+        .site-branding {
+            .site-title,
+            .site-description {
+                margin: 0;
+                padding: 0;
+            }
+
+            .site-title {
+				float: left;
+				font-size: 2.3rem;
+
+                a {
+                    border-bottom: none;
+                    color: #757575;
+                    text-decoration: none;
+                }
+            }
+
+            .site-description {
+                color: #959595;
+				float: left;
+				font-size: 1.250rem;
+				padding: 0.6rem 0 0 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+
+            .site-description {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 30.0625em) and (max-width: 600px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+
+            .site-description {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .site-header {
+        .branding-navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+    }
+}
