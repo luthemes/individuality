@@ -17,6 +17,11 @@
 		<?php Benlumia007\Backdrop\Entry\display_date(); ?>
 		<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
 	</div>
+	<?php if ( has_post_thumbnail() ) { ?>
+		<figure class="post-thumbnail alignwide">
+			<?php the_post_thumbnail( 'individuality-large-thumbnails' ); ?>
+		</figure>
+	<?php } ?>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

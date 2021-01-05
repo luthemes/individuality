@@ -23,8 +23,8 @@
 	<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="post-thumbnail alignwide">
 			<?php the_post_thumbnail( 'individuality-large-thumbnails' ); ?>
+		</figure>
 	<?php } ?>
-	</figure>
 	<div class="entry-excerpt">
 		<?php the_excerpt(); ?>
 	</div>
