@@ -24,6 +24,11 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.1.9 
+- Add clearings for post navigations so it doesn't overlap the footer section
+- Fixed navigation hovering so it doesn't hover red color and underline.
+
+
 Version: 1.1.8 
 - Add Back Post Thumbnail for single pages
 

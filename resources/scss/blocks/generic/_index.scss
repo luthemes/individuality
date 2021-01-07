@@ -1,0 +1,41 @@
+//
+// Initiator ( _content.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2020. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://benjlu.com )
+//
+
+
+.wp-block {
+	max-width: 800px;
+}
+ 
+.wp-block[data-align="wide"] {
+	max-width: 73.125em;
+}
+ 
+.wp-block[data-align="full"] {
+	max-width: none;
+}
+
+ // Fix for wide/full align in editor.
+ .edit-post-visual-editor.editor-styles-wrapper .alignwide,
+ .edit-post-visual-editor.editor-styles-wrapper .alignfull {
+	 box-sizing: border-box;
+	 margin-left: 0;
+	 margin-right: 0;
+	 max-width: 100%;
+ }
+ 
+.edit-post-visual-editor {
+	&__post-title-wrapper {
+		.editor-post-title__input {
+			font-size: 2.625rem;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
