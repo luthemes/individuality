@@ -9,7 +9,7 @@ Stable tag: 1.1.5
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Individuality WordPress Theme, Copyright (C) 2019-2020, Benjamin Lu
+Individuality WordPress Theme, Copyright (C) 2019-2021, Benjamin Lu
 Individuality is distributed under the terms of the GNU GPL
 
 == Description ==
@@ -27,6 +27,7 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 Version: 1.1.9 
 - Add clearings for post navigations so it doesn't overlap the footer section
 - Fixed navigation hovering so it doesn't hover red color and underline.
+- Changed the .wp-block to match the width of the content-width
 
 
 Version: 1.1.8 
