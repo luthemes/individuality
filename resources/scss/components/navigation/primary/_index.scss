@@ -247,7 +247,7 @@
     .primary-navigation .nav-menu li:hover > ul,
     .primary-navigation .nav-menu li:focus > ul,
     .primary-navigation .nav-menu li.focus > ul {
-        left: 0;
+		left: 0;
     }
         
     /* First Tier Dropdown */
@@ -271,7 +271,9 @@
     /* Background color change on Hover */
     .primary-navigation .nav-menu a:hover,
     .primary-navigation .nav-menu a:focus { 
-        background-color: #ffffff;
+		background: #ffffff;
+		border-bottom: none;
+		color: #000000;
     }
     
     .primary-navigation .nav-menu ul a,
