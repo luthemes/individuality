@@ -7,4 +7,9 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
-@import 'clearings/index';
+.post-navigation:before,
+.post-navigation:after {
+	clear: both;
+	content: "";
+	display: table;
+}
