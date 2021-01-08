@@ -239,7 +239,7 @@
         position: absolute; 
         /* has to be the same number as the "line-height" of "nav a" */
         top: 100%;
-        left: -9999em;
+		left: -9999em;
         /*! border: 1px solid #606060; */
     }
         
@@ -248,12 +248,14 @@
     .primary-navigation .nav-menu li:focus > ul,
     .primary-navigation .nav-menu li.focus > ul {
 		left: 0;
+		margin-left: 0.063em;
     }
         
     /* First Tier Dropdown */
     .primary-navigation .nav-menu ul li {
         position: relative;
-        width: 20em;
+		width: 20em;
+		border-bottom: 0.063em solid #ffffff;
     }
     
     /* Second, Third and more Tiers	
@@ -265,7 +267,7 @@
     .primary-navigation .nav-menu li li.focus > ul {
         position: absolute;
         top: 0;
-        left: -100%; 
+		left: -100.8%;
     }
 
     /* Background color change on Hover */
@@ -285,7 +287,12 @@
     .primary-navigation .nav-menu ul a:focus { 
         background-color: #333333;
         color: #ffffff;
-    }
+	}
+	
+	.primary-navigation .nav-menu ul ul a {
+		background: #444444;
+		margin-right: 0.063em;
+	}
     
     .menu-item-has-children > a:after,
     .page_item_has_children > a:after {
