@@ -7,9 +7,17 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
-.post-navigation:before,
-.post-navigation:after {
-	clear: both;
-	content: "";
-	display: table;
+.site-content,
+.site-header,
+.site-footer,
+.content-area,
+.entry-content,
+.post-navigation,
+.posts-navigation {
+	&:before,
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
 }
