@@ -7,6 +7,29 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
+.edit-post-visual-editor {
+	&__post-title-wrapper {
+		.editor-post-title__input {
+			font-size: 2.625rem;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+
+// Fix for wide/full align in editor.
+.edit-post-visual-editor {
+	&.editor-styles-wrapper {
+		.alignwide,
+		.alignfull {
+			box-sizing: border-box;
+			margin-left: 0;
+			margin-right: 0;
+			max-width: 100%;
+		}
+	}
+}
 
 .wp-block {
 	max-width: 50em;
@@ -18,24 +41,4 @@
  
 .wp-block[data-align="full"] {
 	max-width: none;
-}
-
- // Fix for wide/full align in editor.
- .edit-post-visual-editor.editor-styles-wrapper .alignwide,
- .edit-post-visual-editor.editor-styles-wrapper .alignfull {
-	 box-sizing: border-box;
-	 margin-left: 0;
-	 margin-right: 0;
-	 max-width: 100%;
- }
- 
-.edit-post-visual-editor {
-	&__post-title-wrapper {
-		.editor-post-title__input {
-			font-size: 2.625rem;
-			margin: 0;
-			padding: 0;
-			text-align: center;
-		}
-	}
 }
