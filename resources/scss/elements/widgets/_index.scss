@@ -1,0 +1,158 @@
+.widget-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+	margin: 0 auto;
+	padding: 2em 0;
+	max-width: 1170px;
+
+	.search-form:before,
+	.search-form:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	.search-form {
+		padding: 0.938em;
+		background: #555;
+		max-width: 100%;
+	}
+
+	.search-field {
+		border: none;
+		float: left;
+		font-family: 'Merriweather', serif;
+		font-size: 1em;
+		padding: 0.563em;
+		width: 100%;
+	}
+
+	.search-submit {
+		display: none;
+	}
+}
+ 
+ .widget ul,
+ .widget ol {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ .widget li {
+	 margin: 0.4em 0 0 0;
+ }
+ 
+ .widget li li {
+	 margin-left: 1.125em;
+ }
+ 
+ .widget select {
+	 font-family: 'Merriweather', serif;
+	 margin: 0.625em 0;
+	 padding: 0.5em;
+	 width: 100%;
+ }
+ 
+ .widget.widget_post_thumbnail {
+	 padding-bottom: 0;
+ }
+ 
+ .widget-title {
+	 margin: 0 0 0.5em 0;
+ }
+ 
+ .rss-widget-icon {
+	 display: none;
+ }
+ 
+ .rsswidget {
+	 display: block;
+ }
+ 
+ .widget_rss cite {
+	 display: block;
+	 font-size: 0.875em;
+	 font-weight: 700;
+	 margin-bottom: 1.125em;
+ }
+ 
+ .widget-area table {
+	 border-collapse: collapse;
+	 width: 100%;
+ }
+ 
+ .widget-area tr:nth-of-type(odd) {
+	 background: #eeeeee;
+ }
+ 
+ .widget-area th {
+	 background: #333333;
+	 color: #ffffff;
+	 font-weight: 700;
+ }
+ 
+ .widget-area th, td {
+	 border: 0.063em solid #cccccc;
+	 text-align: left;
+	 padding: 0.438em;
+ }
+ 
+ .rss-date {
+	 font-size: 0.875em;
+ }
+ 
+ .rssSummary {
+	 margin-top: 10px;
+ }
+ 
+ #wp-calendar table {
+	 border-collapse: collapse;
+	 width: 100%;
+ }
+ 
+ #wp-calendar tr:nth-of-type(odd) {
+	 background: #eeeeee;
+ }
+ 
+ #wp-calendar th {
+	 background: #999999;
+	 color: #ffffff;
+	 font-weight: 700;
+	 text-align: center;
+ }
+ 
+ #wp-calendar th,
+ #wp-calendar td {
+	 border: 0.063em solid #cccccc;
+	 padding: 0.438em;
+	 text-align: center;
+ }
+ 
+ #wp-calendar {
+	 border: 0.063em solid #cccccc;
+	 margin-bottom: 0;
+	 text-align: center;
+	 width: 100%;
+ }
+ 
+ #wp-calendar a {
+	 color: #1d1d1d;
+	 font-weight: 700;
+ }
+ 
+ #wp-calendar caption {
+	 font-weight: 700;
+	 margin: 5px 0;
+	 text-align: center;
+ }
+ 
+ #wp-calendar #today {
+	 background: #cccccc;
+	 font-weight: 700;
+ }
+ 
+ .textwidget {
+	 line-height: 1.6em;
+ }
