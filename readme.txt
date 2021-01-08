@@ -26,6 +26,8 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 == Changelog ==
 Version: 1.2.0
 - img max-width and height fixed
+- fixed clearings for certain elements
+- restore layouts to widgets
 
 Version: 1.1.9 
 - Add clearings for post navigations so it doesn't overlap the footer section
