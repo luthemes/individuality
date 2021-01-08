@@ -5,7 +5,7 @@ Tags:
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.1.5
+Stable tag: 1.2.0
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,9 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.2.0
+- img max-width and height fixed
+
 Version: 1.1.9 
 - Add clearings for post navigations so it doesn't overlap the footer section
 - Fixed navigation hovering so it doesn't hover red color and underline.
