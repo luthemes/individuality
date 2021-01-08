@@ -52,49 +52,44 @@
 	padding: 0.5em 1em;
 }
 
-
 .posts-navigation,
 .post-navigation {
-    background: #ffffff;
-    clear: both;
-}
+	.nav-links {
+		.nav-previous {
+			float: left;
+			margin: 0;
 
-.posts-navigation .nav-links .nav-previous,
-.post-navigation .nav-links .nav-previous {
-    float: left;
-    margin: 0.5em 0;
-}
+			.post-previous {
+				color: #000000;
+				display: block;
+				font-weight: 700;
+				line-height: 1rem;
+				margin: 0;
+				text-align: left;
+			}
 
-.posts-navigation .nav-links .nav-next,
-.post-navigation .nav-links .nav-next {
-    float: right;
-    margin: 0.5em 0;
-}
+			.post-title {
+				font-size: 0.813em;
+			}
+		}
 
-.posts-navigation .nav-links .nav-previous .post-previous,
-.post-navigation .nav-links .nav-previous .post-previous {
-    display: block;
-    font-size: 0.9375em;
-    font-weight: 700;
-    text-align: left;
-}
+		.nav-next {
+			float: right;
+			margin: 0;
 
-.posts-navigation .nav-links .nav-next .post-next,
-.post-navigation .nav-links .nav-next .post-next {
-    display: block;
-    font-size: 0.9375em;
-    font-weight: 700;
-    text-align: right
-}
+			.post-next {
+				color: #000000;
+				display: block;
+				font-weight: 700;
+				line-height: 1rem;
+				text-align: right
+			}
 
-.posts-navigation .nav-links .nav-previous .post-title,
-.post-navigation .nav-links .nav-previous .post-title {
-    font-size: 0.813em;
-}
-
-.posts-navigation .nav-links .nav-next .post-title,
-.post-navigation .nav-links .nav-next .post-title {
-    font-size: 0.813em;
+			.post-title {
+				font-size: 0.813em;
+			}
+		}
+	}
 }
 
 .link-pages {
