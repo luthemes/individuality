@@ -59,7 +59,24 @@
             .fa-comment {
                 padding: 0 0.313em 0 0.688em;
             }
-        }
+		}
+		
+		.cat-link,
+		.tag-link {
+			display: block;
+			font-size: 0.938em;
+			margin-bottom: 0.250em;
+		}
+
+		.tag-link .fa-tags {
+			margin: 0;
+		}
+
+		.tag-list,
+		.cat-list {
+			font-size: 0.875em;
+		}
+
     }
 
     .page {
