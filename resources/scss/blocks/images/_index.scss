@@ -7,7 +7,10 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
-@import 'generic/index';
-@import 'covers/index';
-@import 'embeds/index';
-@import 'images/index';
+.wp-block-image {
+	.aligncenter {
+		a {
+			border-bottom: none;
+		}
+	}
+}
