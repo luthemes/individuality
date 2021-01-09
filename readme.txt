@@ -24,6 +24,11 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.2.1
+- Made entry-taxonomies to smaller text
+- add custom blocks styles to images, embed
+- small changes to the CSS
+
 Version: 1.2.0
 - img max-width and height fixed
 - fixed clearings for certain elements
