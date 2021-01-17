@@ -24,6 +24,9 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 3.0 - Once theme is installed, click on Activate to begin using this theme.
 
 == Changelog ==
+Version: 1.2.2 
+- change the wp-block style from 50em to 800px, this should fix the alignment issues
+
 Version: 1.2.1
 - Made entry-taxonomies to smaller text
 - add custom blocks styles to images, embed
