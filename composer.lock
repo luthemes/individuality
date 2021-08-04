@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ec70029de2800541e586299bfff320e",
+    "content-hash": "cbe9f895b2a57d3988485f0f4383a0c0",
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "1.1.6",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "08e0138d9056375b4ea29ccacafc5548697405f8"
+                "reference": "b0a71ddcfe5fbc4d2429cec0661089d518792408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/08e0138d9056375b4ea29ccacafc5548697405f8",
-                "reference": "08e0138d9056375b4ea29ccacafc5548697405f8",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/b0a71ddcfe5fbc4d2429cec0661089d518792408",
+                "reference": "b0a71ddcfe5fbc4d2429cec0661089d518792408",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +32,8 @@
                     "src/Entry/functions-entry.php",
                     "src/Site/functions-site.php",
                     "src/Template/functions-template.php",
-                    "src/View/functions-view.php"
+                    "src/View/functions-view.php",
+                    "src/functions-filters.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -54,9 +55,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/1.1.6"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/3.0.0"
             },
-            "time": "2021-01-19T22:20:25+00:00"
+            "time": "2021-08-03T05:18:04+00:00"
         }
     ],
     "packages-dev": [],

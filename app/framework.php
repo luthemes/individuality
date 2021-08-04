@@ -15,20 +15,12 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$individuality = Benlumia007\Backdrop\Framework::get_instance();
+$individuality = new Benlumia007\Backdrop\Framework();
 
-$individuality->menus = new Benlumia007\Backdrop\Menu\Menu(
-	$args = [
-		'primary' => esc_html__( 'Primary Navigation', 'individuality' ),
-		'social' => esc_html__( 'Social Navigation', 'individuality' ),
-	]
-);
+/**
+ * Register Service Provider with the Framework
+ */
+$individuality->provider( Individuality\Menu\Provider::class );
+$individuality->provider( Individuality\Sidebar\Provider::class );
 
-$individuality->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
-	$args = [
-		'primary' => [
-			'name' => esc_html__( 'Primary Sidebar', 'individuality' ),
-			'desc' => esc_html__( 'Test', 'individuality' ),
-		],
-	]
-);
+$individuality->boot();

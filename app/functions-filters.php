@@ -95,3 +95,7 @@ add_filter(
 		return $title;
 	}
 );
+
+add_filter( 'backdrop/template/path', function() {
+	return 'public/views';
+} );

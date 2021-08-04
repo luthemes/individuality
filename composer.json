@@ -1,11 +1,11 @@
 {
     "name": "benlumia007/individuality",
-    "description": "Initiator is a starter theme designed to help theme authors using Backdrop Core Framework.",
+    "description": "individuality is a starter theme designed to help theme authors using Backdrop Core Framework.",
     "keywords": [
         "wordpress",
         "wordpress-theme"
     ],
-    "homepage": "https://github.com/benlumia007/initiator",
+    "homepage": "https://github.com/benlumia007/individuality",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -27,6 +27,6 @@
     },
     "require": {
         "php": ">=5.6",
-        "benlumia007/backdrop-core": "^1.0.0"
+        "benlumia007/backdrop-core": "^3.0.0"
 	}
 }

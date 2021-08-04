@@ -22,18 +22,10 @@ let exportPath = 'individuality';
 
 // Theme root-level files to include.
 let files = [
-	'404.php',
-	'archive.php',,
-	'comments.php',
-	'footer.php',
 	'functions.php',
-	'header.php',
 	'index.php',
-	'page.php',
 	'readme.txt',
 	'screenshot.png',
-	'search.php',
-	'single.php',
 	'style.css'
 ];
 
@@ -41,7 +33,6 @@ let files = [
 let folders = [
 	'app',
 	'public',
-	'templates',
 	'vendor'
 ];
 
