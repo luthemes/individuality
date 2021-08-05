@@ -9,10 +9,10 @@ class Component extends MenuContract {
     }
 
     public function defaults() {
-        return array(
-            'primary'   => esc_html__( 'Primary Sidebar', 'individuality' ),
-            'secondary' => esc_html__( 'Secondary Sidebar', 'individuality' ),
+        return [
+            'primary'   => esc_html__( 'Primary Navigation', 'individuality' ),
+            'secondary' => esc_html__( 'Secondary Navigation', 'individuality' ),
             'social'    => esc_html__( 'Social Navigation', 'individuality' )
-        );
+        ];
     }
 }   
