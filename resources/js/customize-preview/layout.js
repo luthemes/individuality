@@ -1,7 +1,5 @@
-// Gets an array of all layout class names.
-let layouts = Object.values( individualityCustomizePreview.globalLayouts ).map( layout =>
-	'layout-' + layout.name
-);
+// Gets an array of all layout class names. Ex. layout-full and layout-wide.
+let layouts = Object.values( individualityCustomizePreview.globalLayouts ).map( layout => 'layout-' + layout.name );
 
 wp.customize( 'theme_global_layout', value => {
 	value.bind( to => {
