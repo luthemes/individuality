@@ -1,5 +1,5 @@
 // Gets an array of all layout class names.
-let layouts = Object.values( individualityCustomizePreview.globals ).map( layout =>
+let layouts = Object.values( individualityCustomizePreview.globalLayouts ).map( layout =>
 	'layout-' + layout.name
 );
 
