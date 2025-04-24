@@ -54,7 +54,6 @@
      * @link https://laravel.com/docs/6.x/mix#working-with-stylesheets
      */
     mix.js( `${devPath}/js/app.js`, 'js' )
-        .js( `${devPath}/js/navigation.js`, 'js' )
         .js( `${devPath}/js/customize-controls.js`, 'js' )
         .js( `${devPath}/js/customize-preview.js`, 'js' );
     
